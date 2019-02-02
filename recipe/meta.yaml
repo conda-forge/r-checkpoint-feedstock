@@ -1,4 +1,4 @@
-{% set version = "0.4.3" %}
+{% set version = "0.4.5" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,11 +12,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/checkpoint_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/checkpoint/checkpoint_{{ version }}.tar.gz
-  sha256: c3e862f89f8838183d6028f7ed13683aec562e6dab77ad4b6a5e24ec653cfb64
+  sha256: 8c8b8dcf1456fd6a6f92a624e637280e6be0756f26d771401332dbba51a68656
 
 build:
   noarch: generic
-  number: 1000
+  number: 0
 
   rpaths:
     - lib/R/lib/
