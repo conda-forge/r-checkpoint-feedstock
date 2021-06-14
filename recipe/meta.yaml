@@ -1,4 +1,4 @@
-{% set version = "0.4.10" %}
+{% set version = "1.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/checkpoint_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/checkpoint/checkpoint_{{ version }}.tar.gz
-  sha256: 7362ae9703763fe4652d0b592cd913ce506f072a18e5cf5970d08d7cdf4d126a
+  sha256: d36146093763ca29e0296729399b96e0f2e7764745283d6cea1066a96fa085a7
 
 build:
   merge_build_host: true  # [win]
